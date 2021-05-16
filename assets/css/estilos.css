@@ -116,7 +116,7 @@ p, a {font-weight: 400;}
 }
 .recent-work .recent-work-vertical {
 	background: #ffffff;
-  background: linear-gradient(0deg, rgba(97, 197, 137,.5) 0%, rgba(255,255,255,0) 33.333%, rgba(255, 204, 123,.8) 66.666%, rgba(255,255,255,0) 99.999%);
+  background: linear-gradient(0deg, rgba(97, 197, 137,.8) 0%, rgba(255,255,255,0) 33.333%, rgba(255, 204, 123,.8) 66.666%, rgba(255,255,255,0) 99.999%);
   background-size: 300% 300%;
   background-position: 0% 100%;
   transition: .5s;
@@ -136,11 +136,9 @@ p, a {font-weight: 400;}
   transition: .5s;
 }
 /* About */
-#work_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
-  background-position: center center; background-size: cover;
-  height: 100%;
-  width: 100%;
+.about-content h1, .about-content p {
+ margin: 1em .5em;
+ font-style: justify;
 }
 .progress {
   height: 8px;
@@ -171,37 +169,8 @@ p, a {font-weight: 400;}
   padding: 10px !important;
 }
 
-/* Work */
-/* Singel Work */
-#work_single_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-.related-content {
-  border-radius: 20px;
-  cursor: pointer;
-}
-/* Pricing */
-.pricing-list {
-  margin-bottom: 1px;
-}
-.pricing-table {
-  max-width: 350px;
-  margin: auto;
-}
-.pricing-table,
-.pricing-horizontal {
-  border-radius: 15px !important;
-}
-/* Contact */
-#floatingtextarea {
-  height: 150px
-}
 /* Footer */
 footer a.text-light:hover {
-  color: #bfbfbf !important;
+  color: var(--color-amarillo) !important;
   transition-duration: 0.15s;
 }
