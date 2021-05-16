@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="apple-touch-icon" href="assets/img/logo_200x200.png">
 	<!----- icono para apple y safari --> 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Not-Pasture.jpg">
     <!-- Load Require CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font CSS -->
@@ -47,15 +47,9 @@
 
         <div class="container d-flex justify-content-between align-items-center">
 		
-            <a class="navbar-brand h1" href="index.html">
-			<!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
-                <i class='bx bx-buildings bx-sm text-dark'></i>
-				<!--	bx bx-buildings = icono del logo de la web: 
-				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
-				https://boxicons.com/
-				-->
-
-	       <span class="text-dark h4">Marke-</span><span class="text-primary h4">Ting</span></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/Not-Pasture.jpg" width="120" height="80" alt="">
+              </a>
 			
 			<!--	boton de hamburguesa --> 
   	          <button class="navbar-toggler border-0" 
@@ -91,24 +85,24 @@
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Trabajos</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="chef.html">El Chef</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Precios</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="market.html">Natural Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contáctanos</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Reservas</a>
                         </li>
                     </ul>
                 </div>
 
 <!---------------------------------------------------------Fin de las opciones del menu
-    
+
 ------------------------------------------------------------ Inicio de los iconos del menu-->
                 <div class="navbar align-self-center d-flex">
-                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning" data-icon="bx:bx-bell" data-inline="false"></span></a>
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning" data-icon="bx:bx-cart" data-inline="false"></span></a>
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning" data-icon="bx:bx-user-circle" data-inline="false"></span></a>
 				    <!--	https://iconify.design/icon-sets/bx/-->
                 </div>
             </div>
@@ -139,10 +133,9 @@ La .activeclase debe agregarse a una de las diapositivas. De lo contrario, el ca
 Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->				
 
                     <div class="carousel-item active">
-
                  <div class="py-5 row d-flex align-items-center">
                   <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
-                    <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
+                    <h1 class="banner-heading h1 text-light display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
 					<!--typo-space-line = clase configurada en el css 
 					display-3 = <H3> 
 					Where property is one of:
@@ -164,32 +157,26 @@ Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->
 						</div>
 					
 					-->
-                                    Desarrollamos <strong>estrategias</strong> para tu negocio </h1>
-                                <p class="banner-body text-muted py-3 mx-0 px-0">
-                                    Nos dedicamos al SEO y al marketing posicionándo tu web en <a rel="nofollow" 
-									href="https://google.com" target="_parent">Google</a>.
+                                Vegan resto & Beer </h1>
+                                <p class="banner-text display-6 text-light banner-body py-3 mx-0 px-0">
+                                    Propuestas vegetarianas, veganas y raw.
                               </p>
-                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" 
-								href="#" role="button">Comenzar</a>
                             </div>
                         </div>
 
                     </div>
- <!----------------------------------------------------------- Nuevo ITem del Carrousel-->
+ <!----------------------------------------------------------- Nuevo Item del Carrousel-->
 
                     <div class="carousel-item">
 
                         <div class="py-5 row d-flex align-items-center">
                             <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
-                                <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-3 mx-0 px-0 light-300">
-                                    Optimizamos publicaciones en redes sociales
+                                <h1 class="banner-heading h1 text-light display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Natural Shop
                                 </h1>
-                                <p class="banner-body text-muted py-3">
-                                    Somos expertos en comunicación social.
-                                </p>
-                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" 
-					href="#" role="button">Inicio</a>
-					 <!--role="button" indica que un boton no apunta a una url sino que hace otra cosa-->	
+                                <p class="banner-text display-6 text-light banner-body py-3 mx-0 px-0"">
+                                    Productos orgánicos y de elaboracíon propia.
+                                </p>	
                             </div>
                         </div>
 
@@ -199,11 +186,11 @@ Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->
 
                         <div class="py-5 row d-flex align-items-center">
                             <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
-                                <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-3 mx-0 px-0 light-300">
-                                    Nuestras campañas de venta posicionan tu marca.
+                                <h1 class="banner-heading h1 text-light display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Pedí #NotPasture en casa
                                 </h1>
-                                <p class="banner-body text-muted py-3">
-                                    Nos dedicamos a generar leads y conversiones de venta en tu página web en forma automatizada. 
+                                <p class="banner-text display-6 text-light banner-body py-3 mx-0 px-0">
+                                    Delivery en 
                                 </p>
                                 <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="#" role="button">Comezar</a>
                             </div>
@@ -213,15 +200,14 @@ Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->
                 </div>
     <!-------------------------------------------------------Flechas del carrousel   -->
                 <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <i class='bx bx-chevron-left'></i>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Ant.</span>
                 </a>
                 <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <i class='bx bx-chevron-right'></i>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Prox.</span>
                 </a>
             </div>
-			 <!-- bx-chevron-right y left son las puntas de flecha del carrousel -->
             <!-- End slider -->
 
         </div>
@@ -663,8 +649,9 @@ Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->
                 return false;
             });
         });
-    </script>	
- 
+    </script>
+    <!-- Icon Script -->	
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
    
 </body>
 

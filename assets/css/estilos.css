@@ -42,7 +42,7 @@ p, a {font-weight: 400;}
   width: 150px;
   display:block;
   position: absolute;
-  border-bottom:  5px solid #6266ea;
+  border-bottom:  5px solid var(--color-amarillo);
   padding-top: .5em;
 }
 .typo-space-line-center::after {
@@ -62,19 +62,30 @@ p, a {font-weight: 400;}
 #index_banner .carousel-item {
   min-height: 60vh;
 }
-#index_banner .carousel-control-prev i,
-#index_banner .carousel-control-next i {
-  color: #6266ea !important;
+.banner-content {
+  background-color: rgba(61, 61, 61, 0.3);
+  padding-left: 2rem;
+  border-radius: 10px;
+}
+#index_banner .carousel-control-prev span,
+#index_banner .carousel-control-next span {
+  color: #fff !important;
   text-decoration: none;
   font-size: 4em;
+  padding: .5em 0;
+  border-radius: 5px;
+}
+#index_banner .carousel-control-prev span:hover,
+#index_banner .carousel-control-next span:hover {
+  background-color: rgba(61, 61, 61, 0.3);
 }
 #index_banner .carousel-inner {
   height: 80vh;
 }
 #index_banner .carousel-indicators li,
 #index_banner .carousel-indicators.active {
-  background-color: #6266ea !important;
-  // las rayas de abajo del carrousel van de color azul
+  background-color: #fff !important;
+ /* las rayas de abajo del carrousel van de color azul */
 }
 .service-wrapper .service-footer {
   max-width: 720px;
