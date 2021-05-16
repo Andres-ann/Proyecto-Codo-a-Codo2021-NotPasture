@@ -69,22 +69,23 @@ p, a {font-weight: 400;}
 }
 #index_banner .carousel-control-prev span,
 #index_banner .carousel-control-next span {
+  background-color: rgba(61, 61, 61, 0.3);
   color: #fff !important;
   text-decoration: none;
   font-size: 4em;
-  padding: .5em 0;
+  padding: .3em 0;
   border-radius: 5px;
 }
 #index_banner .carousel-control-prev span:hover,
 #index_banner .carousel-control-next span:hover {
-  background-color: rgba(61, 61, 61, 0.3);
+  
 }
 #index_banner .carousel-inner {
   height: 80vh;
 }
 #index_banner .carousel-indicators li,
 #index_banner .carousel-indicators.active {
-  background-color: #fff !important;
+  background-color: var(--color-principal) !important;
  /* las rayas de abajo del carrousel van de color azul */
 }
 .service-wrapper .service-footer {
@@ -114,8 +115,8 @@ p, a {font-weight: 400;}
   border-radius: 10px !important;
 }
 .recent-work .recent-work-vertical {
-	background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+	background: #ffffff;
+  background: linear-gradient(0deg, rgba(97, 197, 137,.5) 0%, rgba(255,255,255,0) 33.333%, rgba(255, 204, 123,.8) 66.666%, rgba(255,255,255,0) 99.999%);
   background-size: 300% 300%;
   background-position: 0% 100%;
   transition: .5s;
