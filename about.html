@@ -1,22 +1,25 @@
-<!DOCTYPE html>                         <!----- definición de html 5 -->          
-<html lang="es"> 						<!----- definición del lenguaje -->  
-										<!------Inicio del  HEAD -->
+<!DOCTYPE html>
+<!----- definición de html 5 -->
+<html lang="es">
+<!----- definición del lenguaje -->
+<!------Inicio del  HEAD -->
+
 <head>
     <title>Not Pasture - Cocina Vegana</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
     <link rel="apple-touch-icon" href="assets/img/logo_200x200.png">
-	<!----- icono para apple y safari --> 
+    <!----- icono para apple y safari -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/Not-Pasture.jpg">
     <!-- Load Require CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font CSS -->
     <link href="assets/css/boxicon.min.css" rel="stylesheet">
-	    <!-- iconos  -->
+    <!-- iconos  -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-	    <!-- tipo de letra -->
-		<!-- carga CSS -->
+    <!-- tipo de letra -->
+    <!-- carga CSS -->
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <!-----
@@ -32,6 +35,7 @@
 .text-white			gris claro
 -->
 <!------------------------------------------------------------------ Fin del  HEAD -->
+
 <body>
     <!-- Header 
 	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
@@ -39,56 +43,55 @@
 	-->
 
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-	
-	<!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
 	navbar-light = texto negro de la letra
 	bg-white = fondo de color blanco
 	-->
 
         <div class="container d-flex justify-content-between align-items-center">
-		
+
             <a class="navbar-brand" href="index.html">
                 <img src="assets/img/Not-Pasture.jpg" width="120" height="60" alt="">
-              </a>
-			
-			<!--	boton de hamburguesa --> 
-  	          <button class="navbar-toggler border-0" 
-				type="button" data-bs-toggle="collapse" 
-				data-bs-target="#navbar-toggler-success" 
-				aria-controls="navbarSupportedContent" 
-				aria-expanded="false" 
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon">
-				</span>
+            </a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
             </button>
-		<!------------------------------------------- Opciones del Menu		-->
-		<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
-		id="navbar-toggler-success">
-		
-		<!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
 		por un punto de interrupción principal.
 		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
 		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
 		directos en elementos flexibles
 		-->
-  		              <div class="flex-fill mx-xl-5 mb-2">
-				<!--	  mx=para clases que establecen tanto *-lefty*-right-->
- 	                   <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-					<!--   .navbar-nav para una navegación ligera y de altura completa 
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
 					   (incluida la compatibilidad con menús desplegables).-->
                         <li class="nav-item">
                             <a class="nav-link btn-outline-warning rounded-pill px-3" href="index.html">Home</a>
-						<!-- px = padding y mx es el margin 
-						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-warning rounded-pill px-3 active" href="about.html">Sobre Nosotros</a>
+                            <a class="nav-link btn-outline-warning rounded-pill px-3 active" href="about.html">Sobre
+                                Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-outline-warning rounded-pill px-3" href="chef.html">El Chef</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-warning rounded-pill px-3" href="market.html">Natural Shop</a>
+                            <a class="nav-link btn-outline-warning rounded-pill px-3" href="market.html">Natural
+                                Shop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-outline-warning rounded-pill px-3" href="contact.html">Reservas</a>
@@ -96,61 +99,85 @@
                     </ul>
                 </div>
 
-<!---------------------------------------------------------Fin de las opciones del menu
+                <!---------------------------------------------------------Fin de las opciones del menu
 
 ------------------------------------------------------------ Inicio de los iconos del menu-->
                 <div class="navbar align-self-center d-flex">
-                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning" data-icon="bx:bx-bell" data-inline="false"></span></a>
-                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning" data-icon="bx:bx-cart" data-inline="false"></span></a>
-                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning" data-icon="bx:bx-user-circle" data-inline="false"></span></a>
-				    <!--	https://iconify.design/icon-sets/bx/-->
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning"
+                            data-icon="bx:bx-bell" data-inline="false"></span></a>
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning"
+                            data-icon="bx:bx-cart" data-inline="false"></span></a>
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning"
+                            data-icon="bx:bx-user-circle" data-inline="false"></span></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
                 </div>
             </div>
         </div>
     </nav>
-<!----------------------------------------------------------- Fin de los iconos del menu
+    <!----------------------------------------------------------- Fin de los iconos del menu
 
     <!-- Close Header -->
- <!----------------------------------------------------------- Fin del Header-->
+    <!----------------------------------------------------------- Fin del Header-->
 
     <!-- Start Banner Hero -->
     <div id="work_banner">
         <img src="assets/img/banner-bg-03.jpg" alt="" class="img-fluid">
     </div>
-        
-    <!-- End Banner Hero -->	
 
-    <!-- About -->	
+    <!-- End Banner Hero -->
+
+    <!-- About -->
     <div class="container">
         <div class="about-content">
             <h1 class="display-3 text-center pt-3">¿Quiénes Somos?</h1>
             <p>
-                Somos una familia que abrió las puertas de su casa. Hace dieciocho años que, a través de nuestros platos sanos, nutritivos y exquisitos nos dedicamos a difundir una filosofía de alimentación consciente. Tenemos un compromiso orientado al cuidado de nuestro planeta y de nuestros organismos. Creemos que desde nuestro lugar podemos brindar una experiencia de sabor y responsabilidad.
+                Somos una familia que abrió las puertas de su casa. Hace dieciocho años que, a través de nuestros platos
+                sanos, nutritivos y exquisitos nos dedicamos a difundir una filosofía de alimentación consciente.
+                Tenemos un compromiso orientado al cuidado de nuestro planeta y de nuestros organismos. Creemos que
+                desde nuestro lugar podemos brindar una experiencia de sabor y responsabilidad.
             </p>
-                
+
             <p>
-                Cocinamos con los que nos ofrece la naturaleza sin contaminar: vegetales y frutas cosechadas en el día, cereales y harinas molidas en molinos de piedra, y aceites de primera presión en frío. En BIO Restaurant solo usamos productos orgánicos. Somos el primer restaurant Orgánico Certificado de la Argentina. Creemos que la nutrición más elevada es la que proviene de la naturaleza; el sistema de producción orgánico crea, recupera y preserva los agroecosistemas y la biodiversidad, en pos de proteger la calidad de vida de la generación actual y de las futuras, manteniendo intacto el sabor de los alimentos y siendo socialmente justa y responsable.
+                Cocinamos con los que nos ofrece la naturaleza sin contaminar: vegetales y frutas cosechadas en el día,
+                cereales y harinas molidas en molinos de piedra, y aceites de primera presión en frío. En BIO Restaurant
+                solo usamos productos orgánicos. Somos el primer restaurant Orgánico Certificado de la Argentina.
+                Creemos que la nutrición más elevada es la que proviene de la naturaleza; el sistema de producción
+                orgánico crea, recupera y preserva los agroecosistemas y la biodiversidad, en pos de proteger la calidad
+                de vida de la generación actual y de las futuras, manteniendo intacto el sabor de los alimentos y siendo
+                socialmente justa y responsable.
             </p>
-    
+
             <p>
-                En <strong>Not Pasture</strong> somos vegetarianos por elección. Adoptamos el vegetarianismo como filosofía y práctica de vida por cuestiones éticas, ecológicas, económicas y saludables. La dieta vegetariana es completa, en ella abundan las albúminas, los hidratos de carbono, las grasas, las sales minerales, las vitaminas, las enzimas esenciales y el agua. Creemos que es posible comer bien, con alimentos que aporten energía y nutrientes sin necesidad de comer carne, viviendo en armonía y respeto recíproco con la naturaleza y con todas las especies que en ella habitan. Además, la gran mayoría de nuestros platos son aptos para veganos. 
+                En <strong>Not Pasture</strong> somos vegetarianos por elección. Adoptamos el vegetarianismo como
+                filosofía y práctica de vida por cuestiones éticas, ecológicas, económicas y saludables. La dieta
+                vegetariana es completa, en ella abundan las albúminas, los hidratos de carbono, las grasas, las sales
+                minerales, las vitaminas, las enzimas esenciales y el agua. Creemos que es posible comer bien, con
+                alimentos que aporten energía y nutrientes sin necesidad de comer carne, viviendo en armonía y respeto
+                recíproco con la naturaleza y con todas las especies que en ella habitan. Además, la gran mayoría de
+                nuestros platos son aptos para veganos.
             </p>
-    
+
             <p>
-                Confiamos en la sabiduría ancestral de nuestros abuelos que elegían cuidadosamente la verdura, que nos transmitían los secretos de las recetas familiares; no conocían la comida chatarra y compartían la mesa, charlando, saboreando, alimentando el alma y el cuerpo. Por eso proponemos volver al origen y redescubrir el alimento.
+                Confiamos en la sabiduría ancestral de nuestros abuelos que elegían cuidadosamente la verdura, que nos
+                transmitían los secretos de las recetas familiares; no conocían la comida chatarra y compartían la mesa,
+                charlando, saboreando, alimentando el alma y el cuerpo. Por eso proponemos volver al origen y
+                redescubrir el alimento.
             </p>
-    
+
             <p>
-                Pensamos que desde nuestro lugar en el mundo podemos generar hábitos de alimentación más saludables, que amplíen el grado de conciencia y de felicidad de los hombres. Si todos cambiamos nuestra manera de comer no solo nos beneficiamos con más salud, más energía y vitalidad, sino también repercute en la economía, en la ecología, en el cuidado del agua y del suelo.
+                Pensamos que desde nuestro lugar en el mundo podemos generar hábitos de alimentación más saludables, que
+                amplíen el grado de conciencia y de felicidad de los hombres. Si todos cambiamos nuestra manera de comer
+                no solo nos beneficiamos con más salud, más energía y vitalidad, sino también repercute en la economía,
+                en la ecología, en el cuidado del agua y del suelo.
             </p>
-    
+
             <p>
                 Cocina consciente en un ambiente armonioso es la gran propuesta de <strong>Not Pasture</strong>.
             </p>
-    
+
             <img src="assets/img/notpasture-1080x1080.jpg" alt="" class="col-8 col-md-3 mx-auto d-block">
         </div>
-       
+
     </div>
 
 
@@ -164,7 +191,8 @@
                         <img src="assets/img/Not-Pasture.jpg" alt="" class="rounded mx-auto">
                     </a>
                     <p class="text-light my-lg-4 my-2">
-                        Es parte de nuestra filosofía respetar los ciclos de la Tierra, a los que en ella habitan y utilizar alimentos puramente orgánicos o libres de agrotóxicos.
+                        Es parte de nuestra filosofía respetar los ciclos de la Tierra, a los que en ella habitan y
+                        utilizar alimentos puramente orgánicos o libres de agrotóxicos.
                     </p>
                 </div>
 
@@ -172,24 +200,24 @@
                     <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Mundo</h2>
                         <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
-                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light" 
-								href="index.html">Home</a>
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
                             </li>
                             <li class="pb-2">
-                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-								href="about.html">Nosotros</a>
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Nosotros</a>
                             </li>
                             <li class="pb-2">
-                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-								href="chef.html">Nuestro Chef</a>
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="chef.html">Nuestro Chef</a>
                             </li>
                             <li class="pb-2">
-                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-								href="market.html">Natural Shop</a>
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="market.html">Natural Shop</a>
                             </li>
                             <li class="pb-2">
-                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-								href="contact.html">Reservas</a>
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Reservas</a>
                             </li>
                         </ul>
                 </div>
@@ -198,20 +226,20 @@
                     <h2 class="h4 pb-lg-3 text-light light-300">Más de nosotros</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-							href="#">Cursos</a>
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="#">Cursos</a>
                         </li>
                         <li class="pb-2">
-                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-							href="#">Recetas</a>
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="#">Recetas</a>
                         </li>
                         <li class="pb-2">
-                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-							href="#">Catering</a>
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="#">Catering</a>
                         </li>
                         <li class="pb-2">
-                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-							href="#">Viandas</a>
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="#">Viandas</a>
                         </li>
                     </ul>
                 </div>
@@ -220,12 +248,14 @@
                     <h2 class="h4 pb-lg-3 text-light light-300">At. al cliente:</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <span class="iconify" data-icon="bx:bx-phone" data-inline="false"></span><a class="text-decoration-none text-light py-1" 
-							href="tel:010-020-0340"> +54 11 2354-4568</a>
+                            <span class="iconify" data-icon="bx:bx-phone" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="tel:010-020-0340"> +54 11
+                                2354-4568</a>
                         </li>
                         <li class="pb-2">
-                            <span class="iconify" data-icon="bx:bx-mail-send" data-inline="false"></span><a class="text-decoration-none text-light py-1"
-							href="mailto:info@notpasture.com">  info@notpasture.com</a>
+                            <span class="iconify" data-icon="bx:bx-mail-send" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="mailto:info@notpasture.com">
+                                info@notpasture.com</a>
                         </li>
                     </ul>
                     <ul class="list-inline footer-icons light-300">
@@ -236,7 +266,8 @@
                         </li>
                         <li class="list-inline-item m-0">
                             <a class="text-light" target="_blank" href="https://www.facebook.com/">
-                                <span class="iconify display-6" data-icon="bx:bxl-facebook-circle" data-inline="false"></span>
+                                <span class="iconify display-6" data-icon="bx:bxl-facebook-circle"
+                                    data-inline="false"></span>
                             </a>
                         </li>
                         <li class="list-inline-item m-0">
@@ -270,8 +301,8 @@
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
-							href="https://instagram.com/andres.ann" target="_blank"><strong>@andres.ann</strong></a>
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://instagram.com/andres.ann" target="_blank"><strong>@andres.ann</strong></a>
                         </p>
                     </div>
                 </div>
@@ -286,17 +317,17 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Load jQuery require for isotope -->
     <script src="assets/js/jquery.min.js"></script>
-   <!-- Isotope -->
+    <!-- Isotope -->
     <script src="assets/js/isotope.pkgd.js"></script>
     <!-- Page Script -->
     <script>
-        $(window).load(function() {
+        $(window).load(function () {
             // init Isotope
             var $projects = $('.projects').isotope({
                 itemSelector: '.project',
                 layoutMode: 'fitRows'
             });
-            $(".filter-btn").click(function() {
+            $(".filter-btn").click(function () {
                 var data_filter = $(this).attr("data-filter");
                 $projects.isotope({
                     filter: data_filter
@@ -309,9 +340,9 @@
             });
         });
     </script>
-    <!-- Icon Script -->	
+    <!-- Icon Script -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-   
+
 </body>
 
 </html>
