@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<!----- definición de html 5 -->
+<html lang="es">
+<!----- definición del lenguaje -->
+<!------Inicio del  HEAD -->
+
+<head>
+    <title>Not Pasture - Cocina Vegana</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="apple-touch-icon" href="assets/img/logo_200x200.png">
+    <!----- icono para apple y safari -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Not-Pasture.jpg">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <!-- iconos  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- tipo de letra -->
+    <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<!-----
+.text-primary  		azul
+.text-secondary		gris
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste
+.text-light			blanco
+.text-dark			negro
+.text-muted			gris oscuro
+.text-white			gris claro
+-->
+<!------------------------------------------------------------------ Fin del  HEAD -->
+
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/Not-Pasture.jpg" width="120" height="60" alt="">
+            </a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded-pill px-3" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded-pill px-3" href="about.html">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded-pill px-3" href="chef.html">Nuestro Chef</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded-pill px-3 active"
+                                href="catering.html">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded-pill px-3" href="contact.html">Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------------------------------------------------------Fin de las opciones del menu
+
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning"
+                            data-icon="bx:bx-bell" data-inline="false"></span></a>
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning"
+                            data-icon="bx:bx-cart" data-inline="false"></span></a>
+                    <a class="nav-link" href="#"><span class="iconify bx bx-user bx-sm text-warning"
+                            data-icon="bx:bx-user-circle" data-inline="false"></span></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!----------------------------------------------------------- Fin de los iconos del menu
+
+    <!-- Close Header -->
+    <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+    <div id="work_banner">
+        <img src="assets/img/banner-bg-02.jpg" alt="" class="img-fluid">
+    </div>
+
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Content -->
+    <div class="container">
+
+        <!----------------------------------------------------------- Start Catering Service -->
+
+        <div class="card card-body p-sm-5 m-sm-4 border border-info" id="catering-form">
+            <div class="text-center">
+
+                <h1 class="py-5 display-4">Servicio de Catering</h1>
+
+                <p>Brindamos un servicio de catering diseñado especialmente para cada necesidad. Asesoramos según tus
+                    ganas;
+                    cada propuesta es única.</p>
+
+                <p>Si sos vegano, crudívoro, macrobiótico, o si simplemente buscás una propuesta original, saludable,
+                    sabrosa y con la mejor materia prima orgánica para vos y tus invitados, los Caterings de Bio te van
+                    a
+                    encantar.</p>
+            </div>
+
+            <h3 class="py-5 light-300">¡Para pocas personas o para muchas!</h3>
+
+            <p>Contanos sobre el evento que estás organizando y nos contactaremos para diseñar juntos la mejor solución.
+            </p>
+
+            <hr class="text-muted">
+
+            <!-- Start Catering Form -->
+            <form class="row">
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="name">Nombre y Apellido (*)</label>
+                    <input type="text" class="form-control mt-2 border border-info" id="name"
+                        placeholder="Ingresá tu nombre y apellido" required>
+                </div>
+
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="guests">Invitados (*)</label>
+                    <select id="guests" class="form-control mt-2 border border-info">
+                        <option selected></option>
+                        <option>15 a 30</option>
+                        <option>30 a 50</option>
+                        <option>50 a 80</option>
+                        <option>Más de 80</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="name">Email (*)</label>
+                    <input type="email" class="form-control mt-2 border border-info" id="email"
+                        placeholder="Ingresá tu email" required>
+                </div>
+
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="time">Horario/Duración</label>
+                    <input type="number" class="form-control mt-2 border border-info" id="time"
+                        placeholder="Horario/Duración (hs)" required>
+                </div>
+
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="phone">Teléfono (*)</label>
+                    <input type="number" class="form-control mt-2 border border-info" id="phone" placeholder="Teléfono"
+                        required>
+                </div>
+
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="guests">Zona (*)</label>
+                    <select id="guests" class="form-control mt-2 border border-info">
+                        <option selected></option>
+                        <option>Capital Federal</option>
+                        <option>Gran Buenos Aires</option>
+                        <option>Otra</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="date">Fecha</label>
+                    <input type="date" class="form-control mt-2 border border-info" id="date">
+                </div>
+
+                <div class="col-12 col-sm-6 form-group mb-4">
+                    <label for="guests">Tipo de evento</label>
+                    <select id="guests" class="form-control mt-2 border border-info">
+                        <option selected></option>
+                        <option>Casamiento</option>
+                        <option>Cumpleaños</option>
+                        <option>Evento Corporativo</option>
+                        <option>Otros</option>
+                    </select>
+                </div>
+
+                <div class="col-12 form-group">
+                    <label for="coments">Comentarios / pedidos especiales</label>
+                    <textarea class="form-control mt-2 border border-info" id="coments" rows="3"></textarea>
+                </div>
+
+                <div class="col-12 form-group align-content-end">
+                    <button type="submit" class="btn btn-info text-light align-items-end mt-4 mb-4">Solicitar cotización</button>
+                </div>
+            </form> <!-- End Catering Form -->
+        </div>
+
+        <!----------------------------------------------------------- End Catering Service 
+        
+        
+        ---------------------------------------------------------Start Lunch Service -->
+        <div id="viandas">
+            <div class="col-12">
+                <h3 class="py-5 text-center display-6">Algunas de nuestras delicias</h3>
+
+                <p class="col-md-9 offset-md-2 pb-4">Desde Not Pasture queremos acercate nuestra propuesta de viandas
+                    empresariales y catering, una opción sana y nutritiva para agasajar a tus invitados, al personal de las empresas, industrias,
+                    fabricas, constructoras y colegios cada dia de la semana.</p>
+            </div>
+
+            <!------------------------Start Lunch Options -->
+            <div class="row row-cols-1 row-cols-md-4 mt-4">
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-01.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Budin de mandarinas deliciosas</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+                
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-02.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Cheesecake de frutos rojos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+                
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-03.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Sushi roll vegano de quinoa</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-04.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">pinchos de queso brie, nuez y cherry</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-05.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Mesa Bio para eventos corporativos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-06.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Mini tacos venganos, veggie y raw</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-07.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Brochette de frutas frescas</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-08.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Variedad en mesas dulces</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-09.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Mesas navideñas para eventos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-10.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Tortas de boda veganas</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-11.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Chocotorta vegana y raw</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+
+                <!-- Start Option -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img" src="./assets/img/catering-12.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-left text-light card-body-glass">
+                                <h5 class="light-300">Bruschetas de tomates secos y rúcula</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Option -->
+            </div><!------------------------ End Lunch Options -->
+        </div><!-----------------------------------------------------------End Lunch Service
+
+        ------ Start Section Clients ----------------------------------------------------------->
+        <div class="clients">
+            <h3 class="col pt-5 light-300">Nuestros clientes</h3>
+            <div class="row row-cols-2 row-cols-md-4 mt-4">
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-01.png" alt="Card image">
+                </div>
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-02.png" alt="Card image">
+                </div>
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-03.png" alt="Card image">
+                </div>
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-04.png" alt="Card image">
+                </div>
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-05.png" alt="Card image">
+                </div>
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-06.png" alt="Card image">
+                </div>
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-07.png" alt="Card image">
+                </div>
+
+                <div class="col mb-4">
+                    <img class="card-img" src="./assets/img/client-08.png" alt="Card image">
+                </div>
+            </div>
+            <hr>
+        </div><!-----------------------------------------------------------End Section Clients 
+        
+        
+        ---- Start Contact form ----------------------------------------------------------->
+
+        <div class="row contact-form">
+            <div class="col-sm-4">
+                <img class="card-img" src="assets/img/contratar-el-servicio-viandas.png" alt="">
+            </div>
+                
+            <div class="col-sm-8">
+                <h3 class="col pb-4 light-300">¡Proponé nuestras viandas en tu Empresa!</h3>
+                <form class="row">
+                    <div class="col-12 col-sm-6 form-group mb-4">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre y Apellido">
+                    </div>
+
+                    <div class="form-group col-12 col-sm-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+
+                    <div class="form-group col-12 col-sm-6">
+                      <input type="number" class="form-control" id="phone" placeholder="Teléfono">
+                    </div>
+
+                    <div class="form-group col-12 col-sm-6">
+                        <input type="text" class="form-control" id="company" placeholder="Empresa">
+                      </div>
+                    
+                    <div class="form-group col-12 mt-4">
+                      <textarea class="form-control" id="message" rows="4" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <div class="form-group col-12 mt-4">
+                        <button type="submit" class="btn btn-info text-light">Enviar</button>
+                      </div>
+
+
+                    
+                  </form>
+                  
+            </div>
+        </div><!-----------------------------------------------------------End Contact Form -->
+    </div> 
+    <!-- End Content -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-info pt-4 mt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/Not-Pasture.jpg" alt="" class="rounded mx-auto">
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Es parte de nuestra filosofía respetar los ciclos de la Tierra, a los que en ella
+                        habitan y utilizar alimentos puramente orgánicos o libres de agrotóxicos.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Mundo</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="chef.html">Nuestro Chef</a>
+                            </li>
+                            <li class="pb-2">
+                                <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Reservas</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Más de nosotros</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="#">Cursos</a>
+                        </li>
+                        <li class="pb-2">
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="#">Recetas</a>
+                        </li>
+                        <li class="pb-2">
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="catering.html">Catering</a>
+                        </li>
+                        <li class="pb-2">
+                            <span class="iconify" data-icon="bx:bx-chevron-right" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="catering.html">Viandas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">At. al cliente:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <span class="iconify" data-icon="bx:bx-phone" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="tel:010-020-0340"> +54 11
+                                2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <span class="iconify" data-icon="bx:bx-mail-send" data-inline="false"></span><a
+                                class="text-decoration-none text-light py-1" href="mailto:info@notpasture.com">
+                                info@notpasture.com</a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://instagram.com/">
+                                <span class="iconify display-6" data-icon="bx:bxl-instagram" data-inline="false"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.facebook.com/">
+                                <span class="iconify display-6" data-icon="bx:bxl-facebook-circle"
+                                    data-inline="false"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.youtube.com/">
+                                <span class="iconify display-6" data-icon="bx:bxl-youtube" data-inline="false"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="#">
+                                <span class="iconify display-6" data-icon="bx:bx-mail-send" data-inline="false"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <span class="iconify display-6" data-icon="bx:bxl-whatsapp" data-inline="false"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-dark py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Not Pasture. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://instagram.com/andres.ann" target="_blank"><strong>@andres.ann</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function () {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function () {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+    <!-- Icon Script -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+</body>
+
+</html>
