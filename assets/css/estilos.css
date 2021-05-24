@@ -197,6 +197,14 @@ p, a {font-weight: 400;}
   padding: .5em;
 }
 
+
+/* Contact */
+
+.list-group-item.active {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal)
+}
+
 /* Footer */
 footer a.text-light:hover {
   color: var(--color-amarillo) !important;
